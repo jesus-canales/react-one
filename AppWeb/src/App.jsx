@@ -3,6 +3,7 @@ import Contador from './componentes/Contador'
 import Acordion from "./componentes/Acordion";
 import Carrusel from './componentes/Carrusel';
 import Formulario from './componentes/Formulario'
+import Listado from "./componentes/Listado";
 
 function App(){
   return(
@@ -11,6 +12,11 @@ function App(){
     <Contador />
     <Formulario />
     <Acordion />
+    <br />
+    <br />
+    <Listado />
+    <br />
+    <br />
     </>
   );
 }
