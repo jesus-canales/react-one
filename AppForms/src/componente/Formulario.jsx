@@ -31,7 +31,6 @@ const Formulario = () => {
     const cambioCelular = (e) => setCelular(e.target.value);
     const cambioLugar = (e) => setLugar(e.target.value);
 
-
     return (
         <>
         <Form onSubmit={realizarEnvio}>
