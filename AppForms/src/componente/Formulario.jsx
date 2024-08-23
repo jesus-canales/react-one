@@ -28,7 +28,6 @@ const Formulario = () => {
         <>
         <Form onSubmit={realizarEnvio}>
             <Form.Group>
-                <Form.Label>Formulario de Datos</Form.Label>
                 <Form.Control type="text" value={nombre} onChange={cambioNombre}   placeholder="Ingrese nombre"></Form.Control>
                 <Form.Control type="text" value={apellidos} onChange={cambioApellido} placeholder="Ingrese apellidos"></Form.Control>
                 <Form.Control type="text" value={celular}  onChange={cambioCelular} placeholder="Ingrese celular"></Form.Control>

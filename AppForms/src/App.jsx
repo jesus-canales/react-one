@@ -6,6 +6,9 @@ function App() {
   return (
     <>
       <div className="container container-fluid">
+        <br />
+        <br />
+        <h1>Ingreso de Datos</h1>
         <Formulario />
       </div>
     </>
