@@ -6,6 +6,7 @@ const Formulario = () => {
     const [ apellidos, setApellidos ] = useState('');
     const [ celular, setCelular ] = useState('');
     const [ lugar, setLugar ] = useState('');
+    const [ errors, setErrors] = useState({});
 
     const realizarEnvio = (e) => {
         e.preventDefault();
@@ -15,7 +16,7 @@ const Formulario = () => {
         if(!celular) newErrors.celular = 'El celular es obligatorio';
         if(!lugar) newErrors.lugar = 'El Lugar es obligatorio';
         setErrors(newErrors);
-        alert('Datos ingresados: { $(nombre), $(apellidos, $(celular), $(lugar) }');
+        alert(`Datos ingresados: { ${nombre}, ${apellidos}, ${celular}, ${lugar} }`);
     }
 
     const cambioNombre = (e)=> setNombre(e.target.value);
